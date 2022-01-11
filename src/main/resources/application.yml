@@ -25,6 +25,9 @@ spring:
     properties:
       hibernate.format_sql: true
 
+  thymeleaf:
+    cache: false
+
   jackson:
     serialization:
       fail-on-empty-beans: false
