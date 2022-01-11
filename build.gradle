@@ -21,10 +21,16 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+	implementation 'org.hibernate.javax.persistence:hibernate-jpa-2.2-api:1.0.0.Beta1'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation group:'mysql', name:'mysql-connector-java', version: '8.0.27'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
 
 test {
