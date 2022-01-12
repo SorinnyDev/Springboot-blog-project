@@ -8,7 +8,7 @@ let index = {
     },
 
     save: function() {
-        let data = { //JavaScript Object
+        let data = {
             username: $("#username").val(),
             password: $("#password").val(),
             email: $("#email").val(),
@@ -16,11 +16,11 @@ let index = {
         }
 
         $.ajax({
-            type: "POST", //Http method
-            url: "/api/v1/user", //API 주소
+            type: "POST",               //Http method
+            url: "/auth/api/v1/user",   //API 주소
             data: JSON.stringify(data), //JSON으로 변환
             contentType: "application/json; charset=utf-8", //MIME 타입
-            dataType: "json" //응답 데이터
+            dataType: "json"            //응답 데이터
         }).done(function(res) {
             alert("회원가입이 완료되었습니다.");
             location.href = "/";

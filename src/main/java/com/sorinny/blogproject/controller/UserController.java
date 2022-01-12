@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UserController {
 
     @GetMapping("/auth/user/save")
-    public String userSave(){
+    public String userSave() {
         return "layout/user/user-save";
     }
-
 }
