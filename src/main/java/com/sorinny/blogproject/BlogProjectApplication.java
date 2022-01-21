@@ -10,6 +10,9 @@ public class BlogProjectApplication {
 
 		SpringApplication.run(BlogProjectApplication.class, args);
 
+		//할 차례
+		//https://azurealstn.tistory.com/92?category=920092
+
 	}
 
 }
