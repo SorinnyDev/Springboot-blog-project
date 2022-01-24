@@ -37,4 +37,13 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getRoleKey () {
+        return this.role.getKey();
+    }
+
+    public void update (String password, String nickname) {
+        this.password = password;
+        this.nickname = nickname;
+    }
 }

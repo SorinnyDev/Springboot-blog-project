@@ -32,6 +32,13 @@ public class PrincipalDetail implements UserDetails {
         return user.getUsername();
     }
 
+    public String getEmail(){ return user.getEmail(); }
+
+    public String getNickname(){ return user.getNickname(); }
+
+    public Long getId(){ return user.getId(); }
+
+
     //계정이 만료되었는지(true:만료되지 않음)
     @Override
     public boolean isAccountNonLocked() {
@@ -56,4 +63,6 @@ public class PrincipalDetail implements UserDetails {
         return true;
     }
 
+    public void setUser(User userEntity) {
+    }
 }
